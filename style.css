@@ -1,0 +1,134 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body .container {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container .frame {
+   position: relative;
+   width: 330px;
+   padding: 25px 30px;
+   border-radius: 18px;
+   background: rgba(205, 202, 202, 0.007);
+   display: grid;
+   place-items: center;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.61),
+   inset 0 0 4px rgba(120, 119, 119, 0.304);
+   border: 1px solid rgba(74, 74, 74, 0.189);
+}
+
+.frame .row {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin-bottom: 15px;
+   font-size: 25px;
+   font-weight: 550;
+   color: rgba(0, 0, 0, 0.379);
+}
+
+.frame .dif {
+   justify-content: space-evenly;
+}
+
+.row span {
+   margin: 10px 0;
+   z-index: 10;
+}
+
+.dif span {
+   margin: 0 10px;
+   z-index: 10;
+}
+/* creating screen for the clock */
+
+.frame .screen {
+   position: absolute;
+   top: 20px;
+   display: block;
+   height: 283px;
+   width: 290px;
+   border-radius: 8px;
+   box-shadow: inset -0.5px -0.5px 1px rgba(71, 69, 69, 0.194),
+   inset 0.2px 0.2px 1px rgba(71, 69, 69, 0.194);
+   background-color: rgba(155, 153, 153, 0.039);
+}
+
+.frame .eagle {
+   position: absolute;
+   top: 20%;
+   right: 15%;
+   transform: translateX(-30%);
+   height: 30px;
+   opacity: 0.5;
+}
+
+.frame .img {
+   position: absolute;
+   top: 12%;
+   left: 12%;
+   height: 270px;
+   opacity: 0.36;
+}
+
+.frame .row .holder {
+   position: absolute;
+   left: 50%;
+   top: 43.5%;
+   height: 12px;
+   width: 12px;
+   border-radius: 35%;
+   margin-bottom: -10px;
+   box-shadow: 1px 1px 10px rgba(95, 69, 69, 0.639);
+   background-color: rgb(0, 0, 0);
+}
+/* style the pointers to the hour minute and second */
+
+.frame .hour-pointer {
+   position: absolute;
+   top: 80px;
+   left: 50.5%;
+   height: 95px;
+   border-top-left-radius: 180%;
+   border-top-right-radius: 180%;
+   border-bottom-left-radius: 12px;
+   border-bottom-right-radius: 12px;
+   width: 7px;
+   background-color: rgba(12, 12, 12, 0.781);
+}
+
+.frame .minute-pointer {
+   position: absolute;
+   top: 48%;
+   left: 48%;
+   height: 4px;
+   width: 120px;
+   border-top-left-radius: 100px;
+   border-top-right-radius: 20000%;
+   border-bottom-left-radius: 100px;
+   border-bottom-right-radius: 20000%;
+   background-color: rgba(12, 12, 12, 0.781);
+}
+
+.frame .secend-pointer {
+   position: absolute;
+   top: 48.2%;
+   left: 15%;
+   height: 2px;
+   width: 130px;
+   transform: translate(100deg);
+   background-color: rgb(255, 41, 41);
+}
+
+.row .text {
+   font-size: 17px;
+   color: rgba(7, 36, 133, 0.879);
+   text-shadow: 0 0 2px rgba(195, 9, 9, 0.868);
+}
